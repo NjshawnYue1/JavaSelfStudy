@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\datatstruc.dir/objects.a
+D:\Dev-Cpp\MinGW64\bin\ar.exe cr CMakeFiles\datatstruc.dir/objects.a @CMakeFiles\datatstruc.dir\objects1.rsp
+D:\Dev-Cpp\MinGW64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\datatstruc.dir/objects.a -Wl,--no-whole-archive  -o datatstruc.exe -Wl,--out-implib,libdatatstruc.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\datatstruc.dir\linklibs.rsp

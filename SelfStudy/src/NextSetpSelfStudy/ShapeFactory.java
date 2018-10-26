@@ -1,0 +1,23 @@
+package NextSetpSelfStudy;
+
+/**
+ * @author ShawnYue
+ * @date 2018-10-19 14:47
+ */
+public class ShapeFactory {
+
+  public Shape getShape(String shapeType) {
+    if (shapeType == null) {
+      return null;
+    }
+    if(shapeType.equalsIgnoreCase("circle")){
+      return new Circle();
+    }else if(shapeType.equalsIgnoreCase("rectangle")){
+      return new Rectangle();
+    }else if(shapeType.equalsIgnoreCase("square")){
+      return new Square();
+    }
+    return null;
+  }
+
+}
