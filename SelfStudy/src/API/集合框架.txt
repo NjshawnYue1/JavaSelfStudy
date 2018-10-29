@@ -1,0 +1,100 @@
+集合类的由来：
+对象用于封装特有数据，存储很多对象且个数不确定时就使用集合容器进行存储
+
+用于存储对象的容器  集合的长度是可变的 集合中不可以存储基本数据类型值
+
+对象是如何在集合中进行存储的？其实就是数据和数据存储的方式 即数据结构
+
+由于各种数据结构不同 不断向上抽取之后就形成了集合框架
+
+框架的顶层Collection接口:
+常见方法：
+1.添加
+boolean add(E e);
+boolean addAll(Collection collection);
+
+2.删除
+boolean remove(Object o);
+boolean removeAll(Collection collection);
+
+void clear(); 删除所有元素
+
+3.判断
+boolean contains(Object object);
+boolean containsAll(Collection collection);
+boolean isEmpty();判断集合是否有元素
+
+4.获取
+int size();获取个数
+Iterator iterator();取出元素的方式 迭代器
+迭代器中获取元素的方法next();要在判断hasNext();的基础上使用
+并且方法依赖于具体的容器，因为不同的容器的数据结构不同
+所以迭代器对象实在容器中进行内部实现的 对于使用容器者而言 具体的实现不重要
+只要可以取出容器中的元素 即 通过容器获取迭代器对象iterator();
+也就是Iterator 接口对所有的集合实现了公共接口
+
+5.其他
+boolean retainAll(Collection collection);保留与传入集合相同的元素 即 取交集
+Object[] toArray(); 将集合转成数组
+
+---------------------------------------------------------------------
+
+
+Collection
+
+List 存入和取出的顺序一致  元素都有自己的索引（下标）   存储的元素可以相同
+Set  不包含重复元素的集合
+
+List常见方法 有一个共性特点：都可以操作下标
+1.添加
+void add(index,element);
+void add(index,collection);
+
+2.删除
+Object remove(object)
+
+3.修改
+Object set(index element)
+
+4.获取
+Object get(index);
+int indexOf(Object);
+int lastIndexOf(object);
+List subList(from,to);包含开始不包含结束
+
+List集合可以完成对元素的增删改查
+
+
+List接口中的三个常用子类对象
+  1.Vector:数组数据结构大小可变，是线程安全的，效率低
+  2.ArrayList:数组数据结构大小可变，不同步，替代了Vector，可以为他加锁实现线程同步不再使用Vector 查找的速度快
+
+
+
+
+  3.LinkedList:List的链接列表实现，链表结构，不同步，方便修改元素
+
+
+    addFirst();
+    addLast();
+
+     getFirst();获取但不移除 如果链表为空会抛出NoSuchElementException
+    getLast();
+    peekFirst();获取但不移除 如果链表为空返回NUll
+    peekLast()
+
+    removeFirst();获取并移除 如果链表为空会抛出NoSuchElementException
+    removeLast();
+    pollFirst();获取并移除 如果链表为空返回NUll
+    pollLast();
+
+
+
+--------------------------------------------------------------
+
+Set 元素不可重复
+
+Set接口中的方法和Collection一致
+
+  |-- HashSet  数据结构是哈希表 且不同步
+  |-- TreeSet
