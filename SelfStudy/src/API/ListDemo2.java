@@ -21,16 +21,16 @@ public class ListDemo2 {
 //    Iterator iterator = list.iterator();
 //    while (iterator.hasNext()) {
 //      Object o = iterator.next();//java.util.ConcurrentModificationException
-//      // ²¢·¢ĞŞ¸ÄÒì³£ ÒòÎªÔÚÊ¹ÓÃµü´úÆ÷½øĞĞµü´úµÄÊ±ºòÓÖÓÃÁËlistÈ¥Ôö¼Ó
-//      //¿ÉÒÔÊ¹ÓÃIterator½Ó¿ÚµÄ×Ó½Ó¿ÚListIteratorÀ´Íê³É ÔÚµü´úÖĞ¶ÔÔªËØ½øĞĞ²Ù×÷
+//      // å¹¶å‘ä¿®æ”¹å¼‚å¸¸ å› ä¸ºåœ¨ä½¿ç”¨è¿­ä»£å™¨è¿›è¡Œè¿­ä»£çš„æ—¶å€™åˆç”¨äº†listå»å¢åŠ 
+//      //å¯ä»¥ä½¿ç”¨Iteratoræ¥å£çš„å­æ¥å£ListIteratoræ¥å®Œæˆ åœ¨è¿­ä»£ä¸­å¯¹å…ƒç´ è¿›è¡Œæ“ä½œ
 //      if (o == "abc2") {
 //        list.add("abc5");
 //      } else {
 //        System.out.println(list);
 //      }
 //    }
-    //Ê¹ÓÃÁĞ±íµü´úÆ÷ ¿ÉÒÔÊµÏÖµü´ú¹ı³ÌÖĞ¶ÔÔªËØµÄÔöÉ¾¸Ä²é
-    //Ö»ÓĞList¼¯ºÏÓĞÕâ¸öµü´úÆ÷
+    //ä½¿ç”¨åˆ—è¡¨è¿­ä»£å™¨ å¯ä»¥å®ç°è¿­ä»£è¿‡ç¨‹ä¸­å¯¹å…ƒç´ çš„å¢åˆ æ”¹æŸ¥
+    //åªæœ‰Listé›†åˆæœ‰è¿™ä¸ªè¿­ä»£å™¨
     ListIterator listIterator = list.listIterator();
     while (listIterator.hasNext()){
       Object o = listIterator.next();
@@ -48,7 +48,7 @@ public class ListDemo2 {
     list.add("abc2");
     list.add("abc3");
 
-    //ÒòÎªÓĞÏÂ±êËùÒÔ¿ÉÒÔÕâÑùÈ¡³ö
+    //å› ä¸ºæœ‰ä¸‹æ ‡æ‰€ä»¥å¯ä»¥è¿™æ ·å–å‡º
     for (int i = 0; i < list.size(); i++) {
       System.out.println("get:" + list.get(i));
     }

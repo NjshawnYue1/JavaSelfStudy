@@ -4,18 +4,16 @@ package NextSetpSelfStudy;
  * @author ShawnYue
  * @date 2018-10-12 13:47
  *
- * ´´½¨Ò»¸öclass¾ß±¸private¡¡Êı¾İ³ÉÔ±ºÍprivate·½·¨¡£ ×«Ğ´Ò»¸öÄÚ²¿Àà£¨inner class£©£¬Ê¹Æä·½·¨ĞŞ¸ÄÍâÎ§Àà£¨outer
- * class£©Êı¾İ³ÉÔ±£¬²¢µ÷ÓÃÍâÎ§Àà£¨outer¡¡class£©·½·¨¡£ ÇëÔÚµÚ¶ş¸öÍâÎ§Àà£¨outer class£©·½·¨ÖĞ²úÉúÄÚ²¿Àà£¨inner class£©¶ÔÏó£¬
- * ²¢µ÷ÓÃÆä·½·¨¡£ÊÔËµÃ÷¶ÔÍâÎ§Àà£¨outer class£©¶ÔÏóµÄÓ°Ïì¡£
+ * åˆ›å»ºä¸€ä¸ªclasså…·å¤‡privateã€€æ•°æ®æˆå‘˜å’Œprivateæ–¹æ³•ã€‚ æ’°å†™ä¸€ä¸ªå†…éƒ¨ç±»ï¼ˆinner classï¼‰ï¼Œä½¿å…¶æ–¹æ³•ä¿®æ”¹å¤–å›´ç±»ï¼ˆouter
+ * classï¼‰æ•°æ®æˆå‘˜ï¼Œå¹¶è°ƒç”¨å¤–å›´ç±»ï¼ˆouterã€€classï¼‰æ–¹æ³•ã€‚ è¯·åœ¨ç¬¬äºŒä¸ªå¤–å›´ç±»ï¼ˆouter classï¼‰æ–¹æ³•ä¸­äº§ç”Ÿå†…éƒ¨ç±»ï¼ˆinner classï¼‰å¯¹è±¡ï¼Œ
+ * å¹¶è°ƒç”¨å…¶æ–¹æ³•ã€‚è¯•è¯´æ˜å¯¹å¤–å›´ç±»ï¼ˆouter classï¼‰å¯¹è±¡çš„å½±å“ã€‚
  */
 public class OuterDemo2 {
 
   private int i, j, sum = 0;
+  OuterDemo2(){
 
-//  OuterDemo2(int i, int j) {
-//    this.i = i;
-//    this.j = j;
-//  }
+  }
 
   private void addNum(int i, int j) {
     sum = i + j;
@@ -50,40 +48,48 @@ public class OuterDemo2 {
     inner.test();
   }
 
-//  new Inner() {
-//
-//    public void show() {
-//      i = 4;
-//      j = 5;
-//      System.out.println(i + "........." + j);
-//    }
-//
-//    public void test() {
-//      addNum(3, 4);
-//    }
-//
-//    public void test1() {
-//      class Inner1 {
-//
-//        void show() {
-//          System.out.println("show run");
-//        }
-//      }
-//      Inner1 in = new Inner1();
-//      in.show();//´´½¨Íâ²¿Àà·½·¨ÖĞµÄÄÚ²¿Àà¶ÔÏó ²¢µ÷ÓÃ±¾ÀàÖĞµÄshow·½·¨
-//    }
-//  }
+ private Inner in = new Inner() {
+
+    public void show() {
+      i = 7;
+      j = 5;
+      System.out.println(i + "........." + j);
+    }
+
+    public void test() {
+      addNum(7, 4);
+    }
+
+    public void test1() {
+      class Inner1 {
+
+        void show() {
+          System.out.println("show run");
+        }
+      }
+      Inner1 in = new Inner1();
+      in.show();//åˆ›å»ºå¤–éƒ¨ç±»æ–¹æ³•ä¸­çš„å†…éƒ¨ç±»å¯¹è±¡ å¹¶è°ƒç”¨æœ¬ç±»ä¸­çš„showæ–¹æ³•
+    }
+
+  };
+  Inner getInstance(){
+    return in;
+  }
 
   public static void main(String[] args) {
-//    OuterDemo2.Inner inner = new OuterDemo2().new Inner();//´´½¨ÄÚ²¿Àà¶ÔÏó
+//    OuterDemo2.Inner inner = new OuterDemo2().new Inner();//åˆ›å»ºå†…éƒ¨ç±»å¯¹è±¡
 //    inner.test();
 //    inner.show();
 //    inner.test1();
-    /**Ê¹ÓÃÄäÃûÀàĞŞ¸ÄÉÏÒ»ÌâÖĞµÄÄÚ²¿Àà£¨inner class£©
-     ÉÏÊöÔ´³ÌĞò£¬¾­±àÒëºó£¬ÓĞÄÄĞ©.classÎÄ¼ş£¬·Ö±ğ¶ÔÓ¦ÊÇÄÇĞ©Àà£¨»ò½Ó¿Ú£©
+
+    /**ä½¿ç”¨åŒ¿åç±»ä¿®æ”¹ä¸Šä¸€é¢˜ä¸­çš„å†…éƒ¨ç±»ï¼ˆinner classï¼‰
+     ä¸Šè¿°æºç¨‹åºï¼Œç»ç¼–è¯‘åï¼Œæœ‰å“ªäº›.classæ–‡ä»¶ï¼Œåˆ†åˆ«å¯¹åº”æ˜¯é‚£äº›ç±»ï¼ˆæˆ–æ¥å£ï¼‰
      */
     OuterDemo2 outerDemo2 = new OuterDemo2();
-    outerDemo2.method();//ÄäÃûÄÚ²¿ÀàµÄ·½·¨µ÷ÓÃ
+    outerDemo2.method();//åŒ¿åå†…éƒ¨ç±»çš„æ–¹æ³•è°ƒç”¨
+    Inner in = outerDemo2.getInstance();
+    in.test();
+    in.show();
 
   }
 }

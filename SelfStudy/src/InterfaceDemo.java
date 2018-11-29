@@ -1,6 +1,8 @@
 /**
  * @author uthor ShawnYue
  * @date 2018-10-02 20:32
+ *
+ *
  * 接口的定义不是class而是interface 但抽象类中可以有抽象方法也可以有非抽象的方法 接口中的权限必须是最大的
  * interface编译之后还是class文件
  *
@@ -37,7 +39,7 @@ class InterfaceImpl implements InterTest {
 
 interface InterTest {
 
-  public static final int NUM = 100;
+  int NUM = 100;
 
-  public abstract void show();
+  void show();
 }

@@ -8,7 +8,7 @@ public class RegexExample2 {
 
   public static void main(String[] args) {
     String string = "112233445566abc";
-    String regex = "\\w{10,}";//×ÖÄ¸£¬Êı×Ö£¬ÏÂ»®Ïß³öÏÖ10´Î»òÒÔÉÏ
+    String regex = "\\w{10,}";//å­—æ¯ï¼Œæ•°å­—ï¼Œä¸‹åˆ’çº¿å‡ºç°10æ¬¡æˆ–ä»¥ä¸Š
 
     System.out.println(string.matches(regex));
 
@@ -16,8 +16,8 @@ public class RegexExample2 {
 
 //    System.out.println(string.matches(regex));
     /**
-     * ¸æÖª´Ë×Ö·û´®ÊÇ·ñÆ¥Åä¸ø¶¨µÄÕıÔò±í´ïÊ½¡£
-     * µ÷ÓÃ´Ë·½·¨µÄ str.matches(regex) ĞÎÊ½ÓëÒÔÏÂ±í´ïÊ½²úÉúµÄ½á¹ûÍêÈ«ÏàÍ¬£º
+     * å‘ŠçŸ¥æ­¤å­—ç¬¦ä¸²æ˜¯å¦åŒ¹é…ç»™å®šçš„æ­£åˆ™è¡¨è¾¾å¼ã€‚
+     * è°ƒç”¨æ­¤æ–¹æ³•çš„ str.matches(regex) å½¢å¼ä¸ä»¥ä¸‹è¡¨è¾¾å¼äº§ç”Ÿçš„ç»“æœå®Œå…¨ç›¸åŒï¼š
      * Pattern.matches(regex, str)
      *
      *

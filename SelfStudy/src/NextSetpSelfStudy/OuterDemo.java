@@ -28,7 +28,7 @@ public class OuterDemo {
     }
   };//匿名内部类 继承抽象类或者实现了接口
 
-  OuterIFC getInstance() {//获得该对象的类型
+  OuterIFC getInstance() {//创建单例返回地址
     return o;
   }
 

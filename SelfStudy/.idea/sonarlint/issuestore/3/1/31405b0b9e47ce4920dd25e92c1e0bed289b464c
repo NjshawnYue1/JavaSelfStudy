@@ -1,0 +1,5 @@
+
+Fsquid:S11484"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8¨šÀøó,
+ysquid:S2068"V'password' detected in this expression, review this potentially hard-coded credential.(õ„ÌÛüÿÿÿÿ8šÀøó,
+rsquid:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ªìƒëıÿÿÿÿ8¨šÀøó,
+esquid:S2095#"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ò¡¥¹8¨šÀøó,

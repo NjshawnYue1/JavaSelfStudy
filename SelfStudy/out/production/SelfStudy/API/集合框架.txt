@@ -1,100 +1,147 @@
-�������������
-�������ڷ�װ�������ݣ��洢�ܶ�����Ҹ�����ȷ��ʱ��ʹ�ü����������д洢
+集合类的由来：
+对象用于封装特有数据，存储很多对象且个数不确定时就使用集合容器进行存储
 
-���ڴ洢���������  ���ϵĳ����ǿɱ�� �����в����Դ洢������������ֵ
+用于存储对象的容器  集合的长度是可变的 集合中不可以存储基本数据类型值
 
-����������ڼ����н��д洢�ģ���ʵ�������ݺ����ݴ洢�ķ�ʽ �����ݽṹ
+对象是如何在集合中进行存储的？其实就是数据和数据存储的方式 即数据结构
 
-���ڸ������ݽṹ��ͬ �������ϳ�ȡ֮����γ��˼��Ͽ��
+由于各种数据结构不同 不断向上抽取之后就形成了集合框架
 
-��ܵĶ���Collection�ӿ�:
-����������
-1.����
+Set List Queue Collection 都是接口
+ArrayList LinkedHashSet, LinkedList HashSet Stack TreeSet, Vector 都是实现接口的子类
+
+框架的顶层Collection接口:
+常见方法：
+1.添加
 boolean add(E e);
 boolean addAll(Collection collection);
 
-2.ɾ��
+2.删除
 boolean remove(Object o);
 boolean removeAll(Collection collection);
 
-void clear(); ɾ������Ԫ��
+void clear(); 删除所有元素
 
-3.�ж�
+3.判断
 boolean contains(Object object);
 boolean containsAll(Collection collection);
-boolean isEmpty();�жϼ����Ƿ���Ԫ��
+boolean isEmpty();判断集合是否有元素
 
-4.��ȡ
-int size();��ȡ����
-Iterator iterator();ȡ��Ԫ�صķ�ʽ ������
-�������л�ȡԪ�صķ���next();Ҫ���ж�hasNext();�Ļ�����ʹ��
-���ҷ��������ھ������������Ϊ��ͬ�����������ݽṹ��ͬ
-���Ե���������ʵ�������н����ڲ�ʵ�ֵ� ����ʹ�������߶��� �����ʵ�ֲ���Ҫ
-ֻҪ����ȡ�������е�Ԫ�� �� ͨ��������ȡ����������iterator();
-Ҳ����Iterator �ӿڶ����еļ���ʵ���˹����ӿ�
+4.获取
+int size();获取个数
+Iterator iterator();取出元素的方式 迭代器
+迭代器中获取元素的方法next();要在判断hasNext();的基础上使用
+并且方法依赖于具体的容器，因为不同的容器的数据结构不同
+所以迭代器对象实在容器中进行内部实现的 对于使用容器者而言 具体的实现不重要
+只要可以取出容器中的元素 即 通过容器获取迭代器对象iterator();
+也就是Iterator 接口对所有的集合实现了公共接口
 
-5.����
-boolean retainAll(Collection collection);�����봫�뼯����ͬ��Ԫ�� �� ȡ����
-Object[] toArray(); ������ת������
+5.其他
+boolean retainAll(Collection collection);保留与传入集合相同的元素 即 取交集
+Object[] toArray(); 将集合转成数组
 
 ---------------------------------------------------------------------
 
 
 Collection
 
-List �����ȡ����˳��һ��  Ԫ�ض����Լ����������±꣩   �洢��Ԫ�ؿ�����ͬ
-Set  �������ظ�Ԫ�صļ���
+List 存入和取出的顺序一致  元素都有自己的索引（下标）   存储的元素可以相同
 
-List�������� ��һ�������ص㣺�����Բ����±�
-1.����
+Set  不包含重复元素的集合
+
+List常见方法 有一个共性特点：都可以操作下标
+1.添加
 void add(index,element);
 void add(index,collection);
 
-2.ɾ��
+2.删除
 Object remove(object)
 
-3.�޸�
+3.修改
 Object set(index element)
 
-4.��ȡ
+4.获取
 Object get(index);
 int indexOf(Object);
 int lastIndexOf(object);
-List subList(from,to);������ʼ����������
+List subList(from,to);包含开始不包含结束
 
-List���Ͽ�����ɶ�Ԫ�ص���ɾ�Ĳ�
-
-
-List�ӿ��е����������������
-  1.Vector:�������ݽṹ��С�ɱ䣬���̰߳�ȫ�ģ�Ч�ʵ�
-  2.ArrayList:�������ݽṹ��С�ɱ䣬��ͬ���������Vector������Ϊ������ʵ���߳�ͬ������ʹ��Vector ���ҵ��ٶȿ�
+List集合可以完成对元素的增删改查
 
 
+List接口中的三个常用子类对象
+  1.Vector:数组数据结构大小可变，是线程安全的，效率低
+  2.ArrayList:数组数据结构大小可变，不同步，替代了Vector，可以为他加锁实现线程同步不再使用Vector 查找的速度快
 
 
-  3.LinkedList:List�������б�ʵ�֣������ṹ����ͬ���������޸�Ԫ��
+
+
+  3.LinkedList:List的链接列表实现，链表结构，不同步，方便修改元素
 
 
     addFirst();
     addLast();
 
-     getFirst();��ȡ�����Ƴ� �������Ϊ�ջ��׳�NoSuchElementException
+     getFirst();获取但不移除 如果链表为空会抛出NoSuchElementException
     getLast();
-    peekFirst();��ȡ�����Ƴ� �������Ϊ�շ���NUll
+    peekFirst();获取但不移除 如果链表为空返回NUll
     peekLast()
 
-    removeFirst();��ȡ���Ƴ� �������Ϊ�ջ��׳�NoSuchElementException
+    removeFirst();获取并移除 如果链表为空会抛出NoSuchElementException
     removeLast();
-    pollFirst();��ȡ���Ƴ� �������Ϊ�շ���NUll
+    pollFirst();获取并移除 如果链表为空返回NUll
     pollLast();
 
 
 
 --------------------------------------------------------------
 
-Set Ԫ�ز����ظ�
+Set 元素不可重复
 
-Set�ӿ��еķ�����Collectionһ��
+Set接口中的方法和Collection一致
 
-  |-- HashSet  ���ݽṹ�ǹ�ϣ�� �Ҳ�ͬ��
+  |-- HashSet  数据结构是哈希表 且不同步
   |-- TreeSet
+
+---------------------------------------------------------------
+
+Map<K,V>: 一次添加一对元素  collection一次添加一个元素
+
+Map 也成为双列集合 collection也成为单列集合
+
+该集合中存储的是键值对 且不能包含重复的键
+
+常用方法：
+添加
+V put(K,V) 返回前一个和key关联的值 如果没有这返回null
+
+删除
+
+void clear()清空集合
+V remove(Object key) 根据键返回被删除的元素 删除键值对
+判断
+
+boolean containsKey(key)
+boolean containsValue(value)
+boolean isEmpty();
+
+获取
+
+value get(key) 有则返回 没有该键则返回null
+
+当然可以通过返回Null 来判断是否包含指定键
+
+
+int size() 获取键值对的个数
+
+Map常用的子类
+Hashtable 内部是哈希表 是同步的 不允许Null最为键值
+HashMap 内部结构是哈希表 不是同步的  允许null作为键值
+TreeMap 内部结构式二叉树 不是同步的 可以对Map集合中的键进行排序
+
+-----------------------------------------------------------------------------------------------------
+Interface Comparable<T>
+T指的是将要进行比较的对象的类型
+此接口对实现它的每个类的对象强加一个总排序，这种排序被称为类的自然排序，
+类的compareTo方法被称为其自然比较方法。
+可以将比较器传递给排序方法

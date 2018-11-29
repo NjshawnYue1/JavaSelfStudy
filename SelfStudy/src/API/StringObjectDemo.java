@@ -10,7 +10,7 @@ public class StringObjectDemo {
 //    String s1 ="abc";
 //    String s2 = "abc";
 
-    //intern();¶Ô×Ö·û´®³Ø½øĞĞ²Ù×÷
+    //intern();å¯¹å­—ç¬¦ä¸²æ± è¿›è¡Œæ“ä½œ
 
     String s1 = new String("abc");
     String s2 = s1.intern();

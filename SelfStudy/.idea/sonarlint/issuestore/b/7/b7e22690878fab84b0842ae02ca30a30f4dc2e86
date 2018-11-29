@@ -1,0 +1,6 @@
+
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(³Îû‘úÿÿÿÿ
+>squid:S1068"'Remove this unused "num" private field.(¥Û¾º
+?squid:S1068"(Remove this unused "cash" private field.(“£Šã
+zsquid:S41651"cRemove this useless assignment; "bouns" already holds the assigned value along all execution paths.(˜µæä
+~squid:S4165"bRemove this useless assignment; "name" already holds the assigned value along all execution paths.(É´“ıÿÿÿÿ

@@ -16,7 +16,7 @@ public class RegexExample {
 
     boolean isMatch = Pattern.matches(pattern,content);
     System.out.println(string.matches(pattern1));
-    System.out.println("×Ö·û´®ÊÇ·ñ°üº¬ÁË 'runoob' "+isMatch);
+    System.out.println("å­—ç¬¦ä¸²æ˜¯å¦åŒ…å«äº† 'runoob' "+isMatch);
   }
 
 }

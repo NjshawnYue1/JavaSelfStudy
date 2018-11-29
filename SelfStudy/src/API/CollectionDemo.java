@@ -1,7 +1,11 @@
 package API;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.Iterator;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 /**
  * @author ShawnYue
@@ -10,57 +14,78 @@ import java.util.Collection;
 public class CollectionDemo {
 
   public static void main(String[] args) {
-    Collection collection = new ArrayList();//ÈİÆ÷ ArrayListÊÇÒÑ¾­ÊµÏÖµÄ×ÓÀà
-    show(collection);//[abcd1, abcd2, abcd3]
-    Collection c1 = new ArrayList();
-    Collection c2 = new ArrayList();
-    show(c1, c2);
+//    Collection<String> collection = new ArrayList<>();//å®¹å™¨ ArrayListæ˜¯å·²ç»å®ç°çš„å­ç±»
+//    show(collection);//[abcd1, abcd2, abcd3]
+//    Collection<String> c1 = new ArrayList<>();
+//    Collection<String> c2 = new ArrayList<>();
+//    show(c1, c2);
+
+    SortedSet<Integer> sortedSet = new TreeSet<>();
+    sortedSet.add(3);
+    sortedSet.add(4);
+    sortedSet.add(5);
+    sortedSet.add(6);
+    sortedSet.add(7);
+    sortedSet.add(8);
+    sortedSet.add(9);
+
+    Iterator<Integer> integerIterator = sortedSet.iterator();
+    while (integerIterator.hasNext()){
+      System.out.print(integerIterator.next()+" ");
+    }
+    System.out.println(sortedSet.first());
+    System.out.println(sortedSet.last());
+    System.out.println(((TreeSet<Integer>) sortedSet).pollFirst());
   }
 
-  public static void show(Collection c1, Collection c2) {
-    //¸øc1Ìí¼ÓÔªËØ
+  public static void show(Collection<String> c1, Collection<String> c2) {
+    //ç»™c1æ·»åŠ å…ƒç´ 
     c1.add("abcd1");
     c1.add("abcd2");
     c1.add("abcd3");
     c1.add("abcd4");
 
-    //¸øc2Ìí¼ÓÔªËØ
+    //ç»™c2æ·»åŠ å…ƒç´ 
     c2.add("abcd2");
     c2.add("abcd6");
     c2.add("abcd7");
 
+    System.out.println(Arrays.toString(c1.toArray()));//è¦æŠŠé›†åˆä¸­çš„å…ƒç´ ä»¥å­—ç¬¦ä¸²çš„å½¢å¼è¾“å‡ºåˆ™åº”è¯¥å…ˆæŠŠä»–è½¬æ¢æˆæ•°ç»„çš„å½¢å¼ç„¶åä½¿ç”¨Arrayä¸­çš„é™æ€æ–¹æ³•toStringæŠŠä»–è½¬æˆå­—ç¬¦ä¸²
+
     System.out.println("c1:" + c1);
     System.out.println("c2:" + c2);
+    //c1:[abcd1, abcd2, abcd3, abcd4]  c2:[abcd2, abcd6, abcd7]
 
-    //ÑİÊ¾addAll
-    c1.addAll(c2);//½«c2ÖĞµÄÔªËØÌí¼Óµ½c1ÖĞ ²ÎÊıÊÇÁíÒ»¸ö¼¯ºÏ
-    c1.removeAll(c2);//½«Á½¸ö¼¯ºÏÖĞµÄÏàÍ¬ÔªËØÉ¾³ı´Óµ÷ÓÃÕßµÄ¼¯ºÏÖĞÉ¾³ı
-    //ÑİÊ¾containsAll
+    //æ¼”ç¤ºaddAll
+    c1.addAll(c2);//å°†c2ä¸­çš„å…ƒç´ æ·»åŠ åˆ°c1ä¸­ å‚æ•°æ˜¯å¦ä¸€ä¸ªé›†åˆ [abcd1, abcd2, abcd3, abcd4, abcd2, abcd6, abcd7]
+    c1.removeAll(c2);//å°†ä¸¤ä¸ªé›†åˆä¸­çš„ç›¸åŒå…ƒç´ åˆ é™¤ä»è°ƒç”¨è€…çš„é›†åˆä¸­åˆ é™¤  [abcd1, abcd3, abcd4]
+    //æ¼”ç¤ºcontainsAll
+    System.out.println(c1);
     boolean b = c1.containsAll(c2);
     System.out.println(b);
 //retainAll
-    boolean b1 = c1.retainAll(c2);//±£ÁôºÍµ÷ÓÃÕßÖĞÏàÍ¬µÄÔªËØ£¬É¾³ı²»Í¬µÄÔªËØ
+    boolean b1 = c1.retainAll(c2);//ä¿ç•™å’Œè°ƒç”¨è€…ä¸­ç›¸åŒçš„å…ƒç´ ï¼Œåˆ é™¤ä¸åŒçš„å…ƒç´ 
     System.out.println(b1);
 
     System.out.println(c1);
 
   }
 
-  public static void show(Collection collection) {
-    //1.Ìí¼ÓÔªËØ add
+  public static void show(Collection<String> collection) {
+    //1.æ·»åŠ å…ƒç´  add
     collection.add("abcd1");
     collection.add("abcd2");
     collection.add("abcd3");
     System.out.println(collection);
 
-    //2.É¾³ıÔªËØ »á¸Ä±ä¼¯ºÏµÄ³¤¶È
-    collection.remove("abc2");
+    //2.åˆ é™¤å…ƒç´  ä¼šæ”¹å˜é›†åˆçš„é•¿åº¦
+    collection.remove("abcd2");
     System.out.println(collection);
 
-    //3.Çå¿Õ¼¯ºÏ
+    //3.æ¸…ç©ºé›†åˆ
 //    collection.clear();
 
-    System.out.println(collection.contains("abc3"));
+    System.out.println(collection.contains("abcd3"));
 
   }
 

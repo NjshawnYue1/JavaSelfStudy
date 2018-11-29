@@ -13,18 +13,18 @@ public class StringConstructorDemo {
 
   private static void stringConstructorDemo2() {
   char[] c = {'a','p','w','q','x'};
-    String s = new String(c,1,3);
+    String s = new String(c,1,3);//鍖呭惈棣栦綅
     String s1 = new String(c);
     System.out.println(s);
     System.out.println(s1);
   }
 
   public static void stringConstructorDemo1() {
-    String s = new String();//String s = "";不等效于String s = null;
+    String s = new String();//String s = "";涓嶇瓑鏁堜簬String s = null;
     byte[] arr = {65, 66, 67, 68};
 
     String s1 = new String(arr);
-    System.out.println(s1);//返回了对应的字母值，字节数组到字符串中变成了字母
+    System.out.println(s1);//杩斿洖浜嗗搴旂殑瀛楁瘝鍊硷紝瀛楄妭鏁扮粍鍒板瓧绗︿覆涓彉鎴愪簡瀛楁瘝
 
   }
 

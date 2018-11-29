@@ -8,31 +8,31 @@ public class StringMethodDemo {
 
   public static void main(String[] args) {
     /*
-     * °´ÕÕÃæÏò¶ÔÏß¸øµÄË¼Ïë¶Ô×Ö·û´®µÄ¹¦ÄÜ¾ÍĞĞ·ÖÀà
+     * æŒ‰ç…§é¢å‘å¯¹çº¿ç»™çš„æ€æƒ³å¯¹å­—ç¬¦ä¸²çš„åŠŸèƒ½å°±è¡Œåˆ†ç±»
      * "abcd"
-     * »ñÈ¡×Ö·û´®µÄ³¤¶È int length();
-     * ¸ù¾İÎ»ÖÃ»ñÈ¡×Ö·û char charAt(int index);
-     * ¸ù¾İ×Ö·û»ñÈ¡ÔÚ×Ö·û´®ÖĞµÄÎ»ÖÃ int indexOf(int ch);´«Èë×Ö·û»òÕß¶ÔÓ¦µÄASCIIÂë¶¼ÄÜ·µ»ØµÚÒ»´Î³öÏÖµÄÏÂ±ê£¬Ò²¿ÉÒÔ´ÓÖ¸¶¨ÏÂ±êÎ»ÖÃ¿ªÊ¼Ë÷Òıint indexOf(int ch£¬int fromIndex);
+     * è·å–å­—ç¬¦ä¸²çš„é•¿åº¦ int length();
+     * æ ¹æ®ä½ç½®è·å–å­—ç¬¦ char charAt(int index);
+     * æ ¹æ®å­—ç¬¦è·å–åœ¨å­—ç¬¦ä¸²ä¸­çš„ä½ç½® int indexOf(int ch);ä¼ å…¥å­—ç¬¦æˆ–è€…å¯¹åº”çš„ASCIIç éƒ½èƒ½è¿”å›ç¬¬ä¸€æ¬¡å‡ºç°çš„ä¸‹æ ‡ï¼Œä¹Ÿå¯ä»¥ä»æŒ‡å®šä¸‹æ ‡ä½ç½®å¼€å§‹ç´¢å¼•int indexOf(int chï¼Œint fromIndex);
      * int indexOf(String str);
-     * int lastIndexOf();²ÎÊıÁĞ±íÏàÍ¬£¬×Ö·û´®´ÓºóÍùÇ°²éÕÒ ÏÂ±ê·µ»Ø-1ÔòËµÃ÷×Ö·û»òÕß×Ö·û´®²»´æÔÚ
-     * »ñÈ¡×Ó´® String subString(int beginIndex,int endIndex);°üÀ¨beginµ«²»°üÀ¨end
+     * int lastIndexOf();å‚æ•°åˆ—è¡¨ç›¸åŒï¼Œå­—ç¬¦ä¸²ä»åå¾€å‰æŸ¥æ‰¾ ä¸‹æ ‡è¿”å›-1åˆ™è¯´æ˜å­—ç¬¦æˆ–è€…å­—ç¬¦ä¸²ä¸å­˜åœ¨
+     * è·å–å­ä¸² String subString(int beginIndex,int endIndex);åŒ…æ‹¬beginä½†ä¸åŒ…æ‹¬end
      *
-     * ×ª»»£º°Ñ×Ö·û´®±ä³É×Ö·û´®Êı×é£¨×Ö·û´®ÇĞ¸î£© String[] (String regx) ÕıÔò±í´ïÊ½»òÕßÆÕÍ¨¹æÔò
-     * ×Ö·û´®·µ»Ø×Ö·ûÀàĞÍÊı×é char[] toCharArray();
-     * ½«×Ö·û´®×ª³É×Ö½ÚÊı×é ·µ»Øbyte[] getBytes();
-     * ×Ö·û´®ÖĞ×ÖÄ¸µÄ´óĞ¡Ğ´×ª»» String toUpperCase(); String toLowerCase();
-     * ¶Ô×Ö·û´®ÖĞµÄÄÚÈİ½øĞĞÌæ»» String replace(char oldch,char newch); Ã»ÓĞ¶ÔÓ¦×Ö·û¾Í·µ»ØÔ­À´µÄ×Ö·û´®
+     * è½¬æ¢ï¼šæŠŠå­—ç¬¦ä¸²å˜æˆå­—ç¬¦ä¸²æ•°ç»„ï¼ˆå­—ç¬¦ä¸²åˆ‡å‰²ï¼‰ String[] (String regx) æ­£åˆ™è¡¨è¾¾å¼æˆ–è€…æ™®é€šè§„åˆ™
+     * å­—ç¬¦ä¸²è¿”å›å­—ç¬¦ç±»å‹æ•°ç»„ char[] toCharArray();
+     * å°†å­—ç¬¦ä¸²è½¬æˆå­—èŠ‚æ•°ç»„ è¿”å›byte[] getBytes();
+     * å­—ç¬¦ä¸²ä¸­å­—æ¯çš„å¤§å°å†™è½¬æ¢ String toUpperCase(); String toLowerCase();
+     * å¯¹å­—ç¬¦ä¸²ä¸­çš„å†…å®¹è¿›è¡Œæ›¿æ¢ String replace(char oldch,char newch); æ²¡æœ‰å¯¹åº”å­—ç¬¦å°±è¿”å›åŸæ¥çš„å­—ç¬¦ä¸²
      * String replace(String s1,String s2);
-     * String trim();È¥³ı×Ö·û´®Á½¶ËµÄ¿Õ¸ñ
+     * String trim();å»é™¤å­—ç¬¦ä¸²ä¸¤ç«¯çš„ç©ºæ ¼
      * String concat(string);
-     * String.valueOf() ´«Èë»ù±¾Êı¾İÀàĞÍ¿ÉÒÔ×ª»»³É×Ö·û´®
+     * String.valueOf() ä¼ å…¥åŸºæœ¬æ•°æ®ç±»å‹å¯ä»¥è½¬æ¢æˆå­—ç¬¦ä¸²
      *
-     * ÅĞ¶ÏÁ½¸ö×Ö·û´®ÊÇ·ñÏàÍ¬ boolean equals(Object object);
-     * equalsIgnoreCase(String string);±È½ÏÁ½¸ö×Ö·û´®¶ÔÏó
-     * ×Ö·û´®ÖĞÊÇ·ñ°üº¬Ä³Ò»¸ö×Ö·û´® boolean contains(String string);
-     * ×Ö·û´®ÊÇ·ñÒÔÖ¸¶¨×Ö·û´®¿ªÍ·»ò½áÎ² boolean startsWith(); boolean endsWith();
+     * åˆ¤æ–­ä¸¤ä¸ªå­—ç¬¦ä¸²æ˜¯å¦ç›¸åŒ boolean equals(Object object);
+     * equalsIgnoreCase(String string);æ¯”è¾ƒä¸¤ä¸ªå­—ç¬¦ä¸²å¯¹è±¡
+     * å­—ç¬¦ä¸²ä¸­æ˜¯å¦åŒ…å«æŸä¸€ä¸ªå­—ç¬¦ä¸² boolean contains(String string);
+     * å­—ç¬¦ä¸²æ˜¯å¦ä»¥æŒ‡å®šå­—ç¬¦ä¸²å¼€å¤´æˆ–ç»“å°¾ boolean startsWith(); boolean endsWith();
      *
-     * ±È½Ï compareTo(String string);·µ»ØÁ½¸ö×Ö·û´®Ö®¼äµÄASCIIÖ®¼äµÄ²îÖµ
+     * æ¯”è¾ƒ compareTo(String string);è¿”å›ä¸¤ä¸ªå­—ç¬¦ä¸²ä¹‹é—´çš„ASCIIä¹‹é—´çš„å·®å€¼
      */
     stringMethodDemo_1();
     stringMethodDemo_2();
@@ -42,7 +42,7 @@ public class StringMethodDemo {
 
   private static void stringMethodDemo_4() {
 
-    System.out.println("abc".compareTo("aqz"));
+    System.out.println("abc".compareTo("aqz"));//-15 è¿”å›äº†ç¬¬ä¸€ä¸ªä¸åŒå­—ç¬¦çš„ASCIIçš„å·®å€¼
   }
 
   private static void stringMethodDemo_3() {
@@ -55,26 +55,35 @@ public class StringMethodDemo {
   }
 
   private static void stringMethodDemo_2() {
-    String s = "ÕÅÈı,ÀîËÄ,ÍõÎå";
+    String s = "å¼ ä¸‰,æå››,ç‹äº”";
     String[] arr = s.split(",");
     for (int i = 0; i < arr.length; i++) {
-      System.out.println(arr[i]);
+      System.out.println(arr[i]);//å¼ ä¸‰ æå›› ç‹äº”
     }
     char[] chs = s.toCharArray();
     for (int i = 0; i < chs.length; i++) {
       System.out.println(chs[i]);
+      /*å¼ 
+        ä¸‰
+        ,
+        æ
+        å››
+        ,
+        ç‹
+        äº”
+        */
     }
-    s = "abÄã";
+    s = "abä½ ";
     byte[] bytes = s.getBytes();
     for (int i = 0; i < bytes.length; i++) {
-      System.out.println(bytes[i]);//Êä³öÁË¶ÔÓ¦µÄASCIIÂë
+      System.out.println(bytes[i]);//è¾“å‡ºäº†å¯¹åº”çš„ASCIIç 
     }
     System.out.println("abc".toUpperCase());
     System.out.println("java".replace('a', 'o'));
     String s1 = "java";
-    String s2 = s1.replace('a', 'o');//Èç¹û·µ»ØµÄÄÚÈİÏàÍ¬Ôò¶ÔÏóÖ¸Ïò×Ö·û´®»º³åÇøµÄÍ¬Ò»¸öµØÖ·
+    String s2 = s1.replace('a', 'o');//å¦‚æœè¿”å›çš„å†…å®¹ç›¸åŒåˆ™å¯¹è±¡æŒ‡å‘å­—ç¬¦ä¸²ç¼“å†²åŒºçš„åŒä¸€ä¸ªåœ°å€
     System.out.println(s1.equals(s2));
-    System.out.println("-"+"    a b c   ".trim()+"-");
+    System.out.println("-" + "    a b c   ".trim() + "-");
 
   }
 

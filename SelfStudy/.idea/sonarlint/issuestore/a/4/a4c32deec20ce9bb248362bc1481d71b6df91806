@@ -1,0 +1,24 @@
+
+ysquid:S2068"V'password' detected in this expression, review this potentially hard-coded credential.(õ„ÌÛüÿÿÿÿ8¯”÷­ó,
+Asquid:S1148y"#Use a logger to log this exception.(¸ß¹8€Äã„ñ,
+rsquid:S2095V"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Æ¢šÿÿÿÿÿ8€Äã„ñ,
+usquid:S001176"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(²›‡åùÿÿÿÿ8€Äã„ñ,
+usquid:S00117L"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«›Ï’ùÿÿÿÿ8€Äã„ñ,
+usquid:S001178"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑÒÂ•øÿÿÿÿ8€Äã„ñ,
+psquid:S00117M"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ñµğ“8€Äã„ñ,
+Hsquid:S00108t")Either remove or fill this block of code.(â•¼İ8€Äã„ñ,
+usquid:S00117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çüƒüÿÿÿÿ8€Äã„ñ,
+usquid:S00117N"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«›Òúÿÿÿÿ8€Äã„ñ,
+usquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÁÎÙøÿÿÿÿ8€Äã„ñ,
+psquid:S00117I"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Æ»€Ó8€Äã„ñ,
+usquid:S00117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÏı•ûÿÿÿÿ8€Äã„ñ,
+psquid:S001177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³í8€Äã„ñ,
+usquid:S00117P"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™ñÄßùÿÿÿÿ8€Äã„ñ,
+Fsquid:S1148o"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8€Äã„ñ,
+jsquid:S2095."GUse try-with-resources or close this "ResultSet" in a "finally" clause.(ÊõŞàşÿÿÿÿ8€Äã„ñ,
+Asquid:S1148l"#Use a logger to log this exception.(¸ß¹8€Äã„ñ,
+psquid:S00117O"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§¨·˜8€Äã„ñ,
+osquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒÌ’@8÷¹²­ó,
+usquid:S00117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–áŒ¨şÿÿÿÿ8€Äã„ñ,
+ysquid:S2068""V'password' detected in this expression, review this potentially hard-coded credential.(ò…ıÿÿÿÿ8¬Ùœ¯ó,
+psquid:S001179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢ÆæÕ8€Äã„ñ,

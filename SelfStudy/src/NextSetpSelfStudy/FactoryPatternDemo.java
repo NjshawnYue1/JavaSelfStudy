@@ -8,22 +8,22 @@ public class FactoryPatternDemo {
 
   public static void main(String[] args) {
     ShapeFactory shapeFactory = new ShapeFactory();
-    //»ñÈ¡ Circle µÄ¶ÔÏó£¬²¢µ÷ÓÃËüµÄ draw ·½·¨
+    //è·å– Circle çš„å¯¹è±¡ï¼Œå¹¶è°ƒç”¨å®ƒçš„ draw æ–¹æ³•
     Shape shape1 = shapeFactory.getShape("circle");
 
-    //µ÷ÓÃ Circle µÄ draw ·½·¨
+    //è°ƒç”¨ Circle çš„ draw æ–¹æ³•
     shape1.draw();
 
-    //»ñÈ¡ Rectangle µÄ¶ÔÏó£¬²¢µ÷ÓÃËüµÄ draw ·½·¨
+    //è·å– Rectangle çš„å¯¹è±¡ï¼Œå¹¶è°ƒç”¨å®ƒçš„ draw æ–¹æ³•
     Shape shape2 = shapeFactory.getShape("rectangle");
 
-    //µ÷ÓÃ Rectangle µÄ draw ·½·¨
+    //è°ƒç”¨ Rectangle çš„ draw æ–¹æ³•
     shape2.draw();
 
-    //»ñÈ¡ Square µÄ¶ÔÏó£¬²¢µ÷ÓÃËüµÄ draw ·½·¨
+    //è·å– Square çš„å¯¹è±¡ï¼Œå¹¶è°ƒç”¨å®ƒçš„ draw æ–¹æ³•
     Shape shape3 = shapeFactory.getShape("square");
 
-    //µ÷ÓÃ Square µÄ draw ·½·¨
+    //è°ƒç”¨ Square çš„ draw æ–¹æ³•
     shape3.draw();
   }
 

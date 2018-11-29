@@ -8,61 +8,83 @@ import java.util.Scanner;
  */
 public class VendingMachineDemo {
 
-  static int count1 = 0, count2 = 0, count3 = 0, count4 = 0;
+  private static int count1 = 0, count2 = 0, count3 = 0, count4 = 0;
 
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
-    System.out.println("ÇëÑ¡ÔñÒª¹ºÂòµÄÉÌÆ·£º");
-    System.out.println("[1] ¿ÚÏãÌÇ " + "[2] ÇÉ¿ËÁ¦ " + "[3] ±¬Ã×»¨ " + "[4] ¹ûÖ­ " + "[5] ÏÔÊ¾¹ºÂò×ÜÊý " + "[6] ÍË³ö");
+    System.out.println("è¯·é€‰æ‹©è¦è´­ä¹°çš„å•†å“ï¼š");
+    System.out.println("[1] å£é¦™ç³– " + "[2] å·§å…‹åŠ› " + "[3] çˆ†ç±³èŠ± " + "[4] æžœæ± " + "[5] æ˜¾ç¤ºè´­ä¹°æ€»æ•° " + "[6] é€€å‡º");
 
     int i;
+//    int j;
+//    j = scanner.nextInt();
+//    switch (j) {
+//      case 1:
+//        System.out.println("å£é¦™ç³–");
+//        break;
+//      case 2:
+//        System.out.println("å·§å…‹åŠ›");
+//        break;
+//      case 3:
+//        System.out.println("çˆ†ç±³èŠ±");
+//        break;
+//      case 4:
+//        System.out.println("æžœæ±");
+//        break;
+//
+//    }
 
     while (true) {
       i = scanner.nextInt();
       if (i > 6 || i < 1) {
-        System.out.println("ÇëÊäÈëÕýÈ·µÄÑ¡Ïî£º");
+        System.out.println("è¯·è¾“å…¥æ­£ç¡®çš„é€‰é¡¹ï¼š");
       }
       if (i == 6) {
         break;
       }
-      getSth(i);//Ñ­»·µ÷ÓÃ·½·¨
+      getSth(i);//å¾ªçŽ¯è°ƒç”¨æ–¹æ³•
     }
 
-//    System.out.println("ÊÇ·ñ¼ÌÐø¹ºÂò£¿ÇëÊäÈëÄãµÄÑ¡Ôñ£º");
-//    i = scanner.nextInt();
-//    getSth(i);
   }
 
-  public static void getSth(int i) {
+  private static void getSth(int i) {
 
     switch (i) {
       case 1:
-        System.out.println("¹ºÂòÁËÒ»¸ö¿ÚÏãÌÇ");
-        System.out.println("¼ÌÐø¹ºÂò»òÍË³öÇëÔÙ´ÎÊäÈë±àºÅ£º");
+        System.out.println("è´­ä¹°äº†ä¸€ä¸ªå£é¦™ç³–");
+        System.out.println("ç»§ç»­è´­ä¹°æˆ–é€€å‡ºè¯·å†æ¬¡è¾“å…¥ç¼–å·ï¼š");
         count1++;
         break;
       case 2:
-        System.out.println("¹ºÂòÁËÒ»¸öÇÉ¿ËÁ¦");
-        System.out.println("¼ÌÐø¹ºÂò»òÍË³öÇëÔÙ´ÎÊäÈë±àºÅ£º");
+        System.out.println("è´­ä¹°äº†ä¸€ä¸ªå·§å…‹åŠ›");
+        System.out.println("ç»§ç»­è´­ä¹°æˆ–é€€å‡ºè¯·å†æ¬¡è¾“å…¥ç¼–å·ï¼š");
         count2++;
         break;
       case 3:
-        System.out.println("¹ºÂòÁËÒ»¸ö±¬Ã×»¨");
-        System.out.println("¼ÌÐø¹ºÂò»òÍË³öÇëÔÙ´ÎÊäÈë±àºÅ£º");
+        System.out.println("è´­ä¹°äº†ä¸€ä¸ªçˆ†ç±³èŠ±");
+        System.out.println("ç»§ç»­è´­ä¹°æˆ–é€€å‡ºè¯·å†æ¬¡è¾“å…¥ç¼–å·ï¼š");
 
         count3++;
         break;
       case 4:
-        System.out.println("¹ºÂòÁËÒ»¸ö¹ûÖ­");
-        System.out.println("¼ÌÐø¹ºÂò»òÍË³öÇëÔÙ´ÎÊäÈë±àºÅ£º");
+        System.out.println("è´­ä¹°äº†ä¸€ä¸ªæžœæ±");
+        System.out.println("ç»§ç»­è´­ä¹°æˆ–é€€å‡ºè¯·å†æ¬¡è¾“å…¥ç¼–å·ï¼š");
         count4++;
         break;
       case 5:
-        System.out.println("¹ºÂòÁË " + count1 + " ¸ö¿ÚÏãÌÇ");
-        System.out.println("¹ºÂòÁË " + count2 + " ¸öÇÉ¿ËÁ¦");
-        System.out.println("¹ºÂòÁË " + count3 + " ¸ö±¬Ã×»¨");
-        System.out.println("¹ºÂòÁË " + count4 + " ¸ö¹ûÖ­");
-        System.out.println("¼ÌÐø¹ºÂò»òÍË³öÇëÔÙ´ÎÊäÈë±àºÅ£º");
+        if (count1 != 0) {
+          System.out.println("è´­ä¹°äº† " + count1 + " ä¸ªå£é¦™ç³–");
+        }
+        if (count2 != 0) {
+          System.out.println("è´­ä¹°äº† " + count2 + " ä¸ªå·§å…‹åŠ›");
+        }
+        if (count3 != 0) {
+          System.out.println("è´­ä¹°äº† " + count3 + " ä¸ªçˆ†ç±³èŠ±");
+        }
+        if (count4 != 0) {
+          System.out.println("è´­ä¹°äº† " + count4 + " ä¸ªæžœæ±");
+        }
+        System.out.println("ç»§ç»­è´­ä¹°æˆ–é€€å‡ºè¯·å†æ¬¡è¾“å…¥ç¼–å·ï¼š");
       case 6:
         break;
     }
@@ -70,6 +92,7 @@ public class VendingMachineDemo {
 
   }
 }
+
 
 
 

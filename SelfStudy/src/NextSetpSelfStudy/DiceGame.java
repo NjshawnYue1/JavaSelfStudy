@@ -17,39 +17,39 @@ import javax.swing.JTextArea;
 
 public class DiceGame extends JApplet {
 
-  private JTextArea txtResult;  //ÉùÃ÷ÎÄ±¾¿ò
-  private JButton btnStart;    //ÉùÃ÷°´Å¥
-  private int[] result = new int[13];  //ÉùÃ÷²¢´´½¨ÓÃÓÚÍ³¼Æ÷»×ÓºÍµÄÊı×é¡£
+  private JTextArea txtResult;  //å£°æ˜æ–‡æœ¬æ¡†
+  private JButton btnStart;    //å£°æ˜æŒ‰é’®
+  private int[] result = new int[13];  //å£°æ˜å¹¶åˆ›å»ºç”¨äºç»Ÿè®¡éª°å­å’Œçš„æ•°ç»„ã€‚
 
   public void init() {
     Container container = getContentPane();
-    setLayout(new FlowLayout());  //ÉèÖÃ²¼¾Ö¹ÜÀíÆ÷
-    txtResult = new JTextArea(15, 20);  //´´½¨ÎÄ±¾¿ò
-    txtResult.setVisible(true);    //ÉèÖÃ×é¼ş¿É¼û
-    btnStart = new JButton("Start");  //´´½¨°´Å¥
-    btnStart.setVisible(true);//ÉèÖÃ°´Å¥¿É¼û
+    setLayout(new FlowLayout());  //è®¾ç½®å¸ƒå±€ç®¡ç†å™¨
+    txtResult = new JTextArea(15, 20);  //åˆ›å»ºæ–‡æœ¬æ¡†
+    txtResult.setVisible(true);    //è®¾ç½®ç»„ä»¶å¯è§
+    btnStart = new JButton("Start");  //åˆ›å»ºæŒ‰é’®
+    btnStart.setVisible(true);//è®¾ç½®æŒ‰é’®å¯è§
 
-    container.add(txtResult);    //´´½¨µÄ×é¼ş¼ÓÈëµ½JAppletÖĞ  °Ñ×é¼şÌí¼Óµ½´°¿ÚÖĞ
+    container.add(txtResult);    //åˆ›å»ºçš„ç»„ä»¶åŠ å…¥åˆ°JAppletä¸­  æŠŠç»„ä»¶æ·»åŠ åˆ°çª—å£ä¸­
     container.add(btnStart);
-    //Îª°´Å¥×¢²áÊÂ¼ş¼àÌıÆ÷£¬¸Ã¼àÌıÆ÷ÊÇÒ»¸öÄäÃû¶ÔÏó¡£ÊµÏÖµ±µ¥»÷°´Å¥Ê±£¬Ö´ĞĞÖ¸¶¨µÄ¹¦ÄÜ
+    //ä¸ºæŒ‰é’®æ³¨å†Œäº‹ä»¶ç›‘å¬å™¨ï¼Œè¯¥ç›‘å¬å™¨æ˜¯ä¸€ä¸ªåŒ¿åå¯¹è±¡ã€‚å®ç°å½“å•å‡»æŒ‰é’®æ—¶ï¼Œæ‰§è¡ŒæŒ‡å®šçš„åŠŸèƒ½
     btnStart.addActionListener(new ActionListener() {
       public void actionPerformed(ActionEvent e) {
-        for (int i = 0; i < 13; i++) {  //Êı×éÇå0
+        for (int i = 0; i < 13; i++) {  //æ•°ç»„æ¸…0
           result[i] = 0;
         }
 
-        for (int l = 1; l <= 36000; l++) {  //Ä£ÄâÖÀ÷»×Ó
+        for (int l = 1; l <= 36000; l++) {  //æ¨¡æ‹Ÿæ·éª°å­
           for (int i = 0; i < 6; i++) {
             for (int j = 0; j < 6; j++) {
               int x = 1 + (int) (Math.random() * 6);
               int y = 1 + (int) (Math.random() * 6);
-              result[x + y] += 1;  //Í³¼Æ2¸ö÷»×ÓµÄºÍ
+              result[x + y] += 1;  //ç»Ÿè®¡2ä¸ªéª°å­çš„å’Œ
             }
           }
         }
         txtResult.setText("");
         double t;
-        for (int i = 2; i < 13; i++) {    //Êä³öµ½ÎÄ±¾¿òÖĞ
+        for (int i = 2; i < 13; i++) {    //è¾“å‡ºåˆ°æ–‡æœ¬æ¡†ä¸­
           t = (double) result[i] * 100 / 36000;
           txtResult.append(i + " =" + result[i] + "\t" +
               t + "\n");

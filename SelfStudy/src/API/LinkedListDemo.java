@@ -11,7 +11,7 @@ public class LinkedListDemo {
 
   public static void main(String[] args) {
 
-    LinkedList linkedList = new LinkedList();
+    LinkedList<String> linkedList = new LinkedList<>();
 
     linkedList.addFirst("abc1");
     linkedList.addFirst("abc2");
@@ -22,7 +22,7 @@ public class LinkedListDemo {
     System.out.println(linkedList.getFirst());
 
     System.out.println(linkedList.removeFirst());
-    System.out.println(linkedList.removeFirst());//�Ƴ��󳤶ȸı�
+    System.out.println(linkedList.removeFirst());//移除后长度改变
 
     System.out.println(linkedList);//[abc2, abc1]
 

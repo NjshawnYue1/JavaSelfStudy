@@ -8,29 +8,44 @@ public class StringBufferDemo {
 
   public static void main(String[] args) {
     /*
-     * ÓÃÓÚ´æ´¢Êı¾İµÄÈİÆ÷ ½¨ÒéÓÅÏÈÊ¹ÓÃStringBuilder£¨µ¥Ïß³Ì£©
+     * ç”¨äºå­˜å‚¨æ•°æ®çš„å®¹å™¨ å»ºè®®ä¼˜å…ˆä½¿ç”¨StringBuilderï¼ˆå•çº¿ç¨‹ï¼‰æ•ˆç‡é«˜
      *
-     * 1.³¤¶È¿É±ä 2.¿ÉÒÔ´æ´¢²»Í¬ÀàĞÍµÄÊı¾İ3.¿ÉÒÔ¶Ô×Ö·û´®½øĞĞĞŞ¸Ä
+     * 1.é•¿åº¦å¯å˜ 2.å¯ä»¥å­˜å‚¨ä¸åŒç±»å‹çš„æ•°æ®3.å¯ä»¥å¯¹å­—ç¬¦ä¸²è¿›è¡Œä¿®æ”¹
      *
-     * Ìí¼Ó
-     * append(data); ·µ»ØÁËStringBuffer¶ÔÏó
-     * É¾³ı
+     * æ·»åŠ 
+     * append(data); è¿”å›äº†StringBufferå¯¹è±¡
+     * åˆ é™¤
      * delete(start,end)
      * delete(charAt(int index))
-     * ²éÕÒ
+     * æŸ¥æ‰¾
      * char charAt(int index);
      * int indexOf(string);
      * int lastIndexOf(string);
-     * ĞŞ¸Ä
-     * StringBuffer replace(start,end,string);²»°üº¬end
-     * void setCharAt(index,char);ĞŞ¸Äµ¥¸ö×Ö·û
+     * ä¿®æ”¹
+     * StringBuffer replace(start,end,string);ä¸åŒ…å«end
+     * void setCharAt(index,char);ä¿®æ”¹å•ä¸ªå­—ç¬¦
      *
      * */
+    bufferMethodDemo();
   }
 
   public static void bufferMethodDemo() {
-    //´´½¨»º³åÇø¶ÔÏó
+    //åˆ›å»ºç¼“å†²åŒºå¯¹è±¡
     StringBuffer strbuf = new StringBuffer();
+    strbuf.append(1);
+    strbuf.append(true);
+    strbuf.append('c');
+    char c = strbuf.charAt(2);
+    int i = strbuf.indexOf("1true");
+    StringBuffer stringBuffer = strbuf.replace(1,4,"abc");
+//    strbuf.delete(1,4);//1truecå˜æˆ1ec
+//    strbuf.deleteCharAt(4);//1truecå˜æˆ1truc
+    String s = strbuf.toString();
+    String s1 = stringBuffer.toString();
+    System.out.println(s);
+    System.out.println(c);
+    System.out.println(i);
+    System.out.println(s1);
   }
 
 }

@@ -1,0 +1,6 @@
+
+;squid:S2119+"Save and re-use this "Random".(¼İÅf8è»¯õ,
+{
+squid:S135]"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8å‰Ìõ,
+Gsquid:S1481")Remove this unused "arr2" local variable.(åÜîŞ8è»¯õ,
+usquid:S3776W"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(ÌŞ×‡ùÿÿÿÿ8è»¯õ,

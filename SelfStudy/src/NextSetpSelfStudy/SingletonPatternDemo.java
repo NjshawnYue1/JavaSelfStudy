@@ -7,14 +7,14 @@ package NextSetpSelfStudy;
 public class SingletonPatternDemo {
 
   public static void main(String[] args) {
-    //²»ºÏ·¨µÄ¹¹Ôìº¯Êı
-    //±àÒëÊ±´íÎó£º¹¹Ôìº¯Êı SingleObject() ÊÇ²»¿É¼ûµÄ
+    //ä¸åˆæ³•çš„æ„é€ å‡½æ•°
+    //ç¼–è¯‘æ—¶é”™è¯¯ï¼šæ„é€ å‡½æ•° SingleObject() æ˜¯ä¸å¯è§çš„
     //SingleObject object = new SingleObject();
 
-    //»ñÈ¡Î¨Ò»¿ÉÓÃµÄ¶ÔÏó
+    //è·å–å”¯ä¸€å¯ç”¨çš„å¯¹è±¡
     SingleObject object = SingleObject.getInstance();
 
-    //ÏÔÊ¾ÏûÏ¢
+    //æ˜¾ç¤ºæ¶ˆæ¯
     object.showMessage();
   }
 

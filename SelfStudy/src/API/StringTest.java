@@ -19,7 +19,7 @@ public class StringTest {
   }
 
   /*
-   * ȥ���ַ������˵��ַ� ��������trim();
+   * 去除字符串两端的字符 功能类似trim();
    *
    * */
   private static String test4(String string) {
@@ -29,13 +29,13 @@ public class StringTest {
     }
     while (start <= end && string.charAt(end) == ' ') {
       end--;
-    }
+    }//首位想中间缩进
     return string.substring(start, end + 1);
   }
 
 
   /*
-   * �����ַ������� �����ֵ�˳����д�С���������
+   * 给定字符串数组 按照字典顺序进行从小到大的排序
    *
    * {"nba","abc","cbd","zz","qq","haha"}
    *
@@ -56,7 +56,7 @@ public class StringTest {
   }
 
   /*
-   * һ���Ӵ��������г��ֵĴ���
+   * 一个子串在整串中出现的次数
    * "nbasdsanbaqwnbajjlnba"
    *
    * */
@@ -75,15 +75,15 @@ public class StringTest {
     max = (str1.length() > str2.length()) ? str1 : str2;
     min = max.equals(str1) ? str2 : str1;
     /*
-     * �ж�����Ӵ������ȿ��̵��ַ����Ƿ��ڳ����ַ�������
-     * ������ڣ���ö̵��ַ�����������Ӵ�
-     * ������ǣ���Ӧ��ѭ���ж϶ε��ַ������ճ��ȵݼ��ķ�ʽȡ�Ӵ�ȥ�������ж��Ƿ����
+     * 判断最大子串则首先看短的字符串是否在长的字符串汇中
+     * 如果存在，则该短的字符串就是最大子串
+     * 如果不是，则应该循环判断段的字符串依照长度递减的方式取子串去长串中判断是否存在
      *
      * */
 
     for (int i = 0; i < min.length(); i++) {
       for (int j = 0, k = min.length() - i; k != min.length() + 1; j++, k++) {
-        String s = min.substring(j, k);//�Զ̵��Ӵ����в���
+        String s = min.substring(j, k);//对短的子串进行操作
 //        System.out.println(s);
         if (max.contains(s)) {
           return s;
@@ -93,4 +93,3 @@ public class StringTest {
     return null;
   }
 }
-

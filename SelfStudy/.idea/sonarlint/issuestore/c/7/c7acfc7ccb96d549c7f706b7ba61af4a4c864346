@@ -1,0 +1,12 @@
+
+Fsquid:S1148s"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Åøš¯ó,
+jsquid:S2095*"GUse try-with-resources or close this "Statement" in a "finally" clause.(‡²€·ıÿÿÿÿ8¾Æ¤¯ó,
+msquid:S2095F"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(û©¤Ê8ıîé°ó,
+esquid:S2095/"GUse try-with-resources or close this "ResultSet" in a "finally" clause.(Œû”–8¾Æ¤¯ó,
+csquid:S2147t"ECombine this catch with the one at line 114, which has the same body.(É®£8“Ş ¯ó,
+ysquid:S2068&"V'password' detected in this expression, review this potentially hard-coded credential.(ò…ıÿÿÿÿ8Ôã¯ó,
+ysquid:S2068"V'password' detected in this expression, review this potentially hard-coded credential.(õ„ÌÛüÿÿÿÿ8î¸ˆ¯ó,
+rsquid:S2095X"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(äåŒ¬úÿÿÿÿ8Ã¨±ó,
+ksquid:S2095'"HUse try-with-resources or close this "Connection" in a "finally" clause.(¢è«Şıÿÿÿÿ8ğ©¯ó,
+msquid:S2095e"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(úÓ¦ÿ8şĞ±ó,
+Fsquid:S1148u"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8“Ş ¯ó,

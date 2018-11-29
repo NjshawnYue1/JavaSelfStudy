@@ -11,15 +11,15 @@ import java.util.Iterator;
 public class IteratorDemo {
 
   public static void main(String[] args) {
-    Collection collection = new ArrayList();
+    Collection<String> collection = new ArrayList<>();
 
     collection.add("abcd1");
     collection.add("abcd2");
     collection.add("abcd3");
     collection.add("abcd4");
 
-    //Ê¹ÓÃÁËcollectionÖĞµÄiterator()
-    // µ÷ÓÃ¼¯ºÏÖĞµÄµü´úÆ÷·½·¨ÊÇÎªÁË»ñµÃ¼¯ºÏÖĞµÄµü´úÆ÷¶ÔÏó ÊÇÒ»¸ö½Ó¿Ú
+    //ä½¿ç”¨äº†collectionä¸­çš„iterator()
+    // è°ƒç”¨é›†åˆä¸­çš„è¿­ä»£å™¨æ–¹æ³•æ˜¯ä¸ºäº†è·å¾—é›†åˆä¸­çš„è¿­ä»£å™¨å¯¹è±¡ æ˜¯ä¸€ä¸ªæ¥å£
 
     Iterator iterator = collection.iterator();
     while (iterator.hasNext()){

@@ -1,0 +1,5 @@
+
+ssquid:UselessImportCheck"CRemove this unused import 'java.security.NoSuchAlgorithmException'.(ŒòÍ¾þÿÿÿÿ8ÖÜ‡Òñ,
+;squid:S2119"Save and re-use this "Random".(¼ÝÅf8ÏŒ‡Òñ,
+gsquid:UselessImportCheck"7Remove this unused import 'java.security.SecureRandom'.(›éè™úÿÿÿÿ8ÏŒ‡Òñ,
+‘squid:S1319"sThe return type of this method should be an interface such as "SortedMap" rather than the implementation "TreeMap".(Ï˜Þþ8¾¬ó“ñ,

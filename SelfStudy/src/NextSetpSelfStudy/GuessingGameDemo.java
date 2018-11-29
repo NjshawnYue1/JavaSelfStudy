@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 /**
  * @author ShawnYue
- * @date 2018-10-19 13:36 ÔËÓÃÃæÏò³éÏóµÄÔ­Ôò£¬Éè¼ÆÒ»¸öÓÎÏ·ÏîÄ¿¡°¼ôµ¶£­Ê¯Í·£­²¼¡±£¬¿ÉÒÔ½øÐÐÈË£­»ú¶ÔÞÄ¡¢ÈË£­ÈË¶ÔÞÄ¡£ [Éè¼Æ²Î¿¼]
- * £¨1£©Ïà¹ØÀàµÄ³éÏóÓëÉè¼Æ£ºË¼¿¼ÓÎÏ·£¨»òÔË¶¯£©¹ý³ÌÖÐ£¬ÓÐÄÇÐ©½ÇÉ«²ÎÓëÆäÖÐ?´Ó¶ø³éÏó³öÆäÖÐµÄÏà¹ØÀà¡¢ÀàµÄÊôÐÔÓë·½·¨¡£ÓÃUMLÍ¼ÃèÊöÖ®¡£ £¨2£©¿ÉÒÔÓÃÊý×Ö0¡¢1¡¢2·Ö´ú±í¼ôµ¶¡¢Ê¯Í·¡¢²¼£»
- * £¨3£©ÈË£­»ú¶ÔÞÄÖÐ¼ÆËã»úµÄ¶¯×÷ÓÃËæ»úÊý·¢ÉúÆ÷²úÉúµÄ0¡¢1¡¢2Ä£Äâ¡£ £¨4£©»ñÊ¤µÄÅÐ¶Ï¿ÉÒÔÓÃËãÊõÔËËã½á¹û½øÐÐÅÐ¶Ï£¬¿ÉÒÔÁÐ±í½øÐÐÈçÏÂÐÎÊ½µÄ·ÖÎö£º ¼×	ÒÒ	¼×£­ÒÒ	Ê¤¸º
+ * @date 2018-10-19 13:36 è¿ç”¨é¢å‘æŠ½è±¡çš„åŽŸåˆ™ï¼Œè®¾è®¡ä¸€ä¸ªæ¸¸æˆé¡¹ç›®â€œå‰ªåˆ€ï¼çŸ³å¤´ï¼å¸ƒâ€ï¼Œå¯ä»¥è¿›è¡Œäººï¼æœºå¯¹å¼ˆã€äººï¼äººå¯¹å¼ˆã€‚ [è®¾è®¡å‚è€ƒ]
+ * ï¼ˆ1ï¼‰ç›¸å…³ç±»çš„æŠ½è±¡ä¸Žè®¾è®¡ï¼šæ€è€ƒæ¸¸æˆï¼ˆæˆ–è¿åŠ¨ï¼‰è¿‡ç¨‹ä¸­ï¼Œæœ‰é‚£äº›è§’è‰²å‚ä¸Žå…¶ä¸­?ä»Žè€ŒæŠ½è±¡å‡ºå…¶ä¸­çš„ç›¸å…³ç±»ã€ç±»çš„å±žæ€§ä¸Žæ–¹æ³•ã€‚ç”¨UMLå›¾æè¿°ä¹‹ã€‚ ï¼ˆ2ï¼‰å¯ä»¥ç”¨æ•°å­—0ã€1ã€2åˆ†ä»£è¡¨å‰ªåˆ€ã€çŸ³å¤´ã€å¸ƒï¼›
+ * ï¼ˆ3ï¼‰äººï¼æœºå¯¹å¼ˆä¸­è®¡ç®—æœºçš„åŠ¨ä½œç”¨éšæœºæ•°å‘ç”Ÿå™¨äº§ç”Ÿçš„0ã€1ã€2æ¨¡æ‹Ÿã€‚ ï¼ˆ4ï¼‰èŽ·èƒœçš„åˆ¤æ–­å¯ä»¥ç”¨ç®—æœ¯è¿ç®—ç»“æžœè¿›è¡Œåˆ¤æ–­ï¼Œå¯ä»¥åˆ—è¡¨è¿›è¡Œå¦‚ä¸‹å½¢å¼çš„åˆ†æžï¼š ç”²	ä¹™	ç”²ï¼ä¹™	èƒœè´Ÿ
  */
 public class GuessingGameDemo {
 
@@ -16,7 +16,7 @@ public class GuessingGameDemo {
     System.out.println();
     System.out.println("-------------------------------------------------");
     System.out.println();
-    System.out.println("ÓÎÏ·¿ªÊ¼ÇëÊäÈëÄãµÄÑ¡Ôñ");
+    System.out.println("æ¸¸æˆå¼€å§‹è¯·è¾“å…¥ä½ çš„é€‰æ‹©");
 //    machineTest.show();
     PersonTest personTest1 = new PersonTest("xm", "xf");
     personTest1.guessingGame();
@@ -46,10 +46,10 @@ class MachineTest implements GameDemo {
 //  }
   public void guessingGame() {
     Scanner scanner = new Scanner(System.in);
-    System.out.println("ÇëÊäÈë0,1,2");
+    System.out.println("è¯·è¾“å…¥0,1,2");
     int j = scanner.nextInt();
     if (intStr[i] - j == 0) {
-      System.out.println("Æ½¾Ö");
+      System.out.println("å¹³å±€");
     } else if (intStr[i] - j == 1 || intStr[i] - j == -2) {
       System.out.println(name + " win ");
     } else {
@@ -58,7 +58,7 @@ class MachineTest implements GameDemo {
   }
 }
 
-class PersonTest extends RuntimeException implements GameDemo {
+class PersonTest implements GameDemo {
 
 
   private Scanner scanner = new Scanner(System.in);
@@ -76,10 +76,10 @@ class PersonTest extends RuntimeException implements GameDemo {
   public void guessingGame() {
     while (true) {
       if (i > 2 || i < 0 || j > 2 || j < 0) {
-        throw new NumberFormatException();
+        System.out.println("è¾“å…¥æœ‰è¯¯");
       }
       if (i - j == 0) {
-        System.out.println("Æ½¾Ö");
+        System.out.println("å¹³å±€");
         break;
       } else if (i - j == 1 || i - j == -2) {
         System.out.println(name1 + " win ");

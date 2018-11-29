@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
-    <file url="PROJECT" charset="GBK" />
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/API/ArrayListTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/CollectionDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/HashSetDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/IteratorDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/LinkedListDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/LinkedListTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/ListDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/ListDemo2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/StringBufferDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/StringConstructorDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/StringDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/StringMethodDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/StringObjectDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/StringTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/WrapperDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/WrapperDemo2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/WrapperTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/API/集合框架.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/FirstStepSelfStudy/FrameDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/FirstStepSelfStudy/GuessNum.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Generic/GenericDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Generic/泛型.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Lesson/PrintDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/NextSetpSelfStudy/BuyTicketsDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/NextSetpSelfStudy/DiceGame.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/NextSetpSelfStudy/FactoryPatternDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/NextSetpSelfStudy/GuessingGameDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/NextSetpSelfStudy/OuterDemo2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/NextSetpSelfStudy/RegexExample.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/NextSetpSelfStudy/RegexExample2.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/NextSetpSelfStudy/RegexMatches.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/NextSetpSelfStudy/SingletonPatternDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/NextSetpSelfStudy/TestOuterDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/NextSetpSelfStudy/ThreadDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/NextSetpSelfStudy/VendingMachineDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/PrintTriangleDemo.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

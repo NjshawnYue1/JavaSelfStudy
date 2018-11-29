@@ -1,0 +1,5 @@
+
+`squid:UselessImportCheck"0Remove this unused import 'java.awt.FlowLayout'.(Íğç¢ÿÿÿÿÿ8Õ¶¾ùó,
+Fsquid:S1604>"(Make this anonymous inner class a lambda(Èú†8¿…¬ùó,
+Qsquid:S1481K".Remove this unused "frameTest" local variable.(´ËíŒÿÿÿÿÿ8Ò¡­ùó,
+isquid:CommentedOutCodeLine1"<This block of commented-out lines of code should be removed.(¾ş½ù8”ãÁùó,

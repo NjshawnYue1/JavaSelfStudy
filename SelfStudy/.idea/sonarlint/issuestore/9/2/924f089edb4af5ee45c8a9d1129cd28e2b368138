@@ -1,0 +1,7 @@
+
+1squid:S1220""Move this file to a named package.
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(îáðÔ8Ý„õÑñ,
+gsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(â†£åúÿÿÿÿ
+nsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(§ÐÜŠøÿÿÿÿ8Ý„õÑñ,
+qsquid:S00115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‹ÎÒ4
+isquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(‹ÎÒ4

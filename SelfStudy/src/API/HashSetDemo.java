@@ -14,7 +14,7 @@ public class HashSetDemo {
 
     hashSet.add("zz");
     hashSet.add("aa");
-    hashSet.add("bb");//Èç¹ûÌí¼ÓÏàÍ¬µÄÔªËØ Ôò²»»áÌí¼Óµ½¸ÃsetÖĞ
+    hashSet.add("bb");//å¦‚æœæ·»åŠ ç›¸åŒçš„å…ƒç´  åˆ™ä¸ä¼šæ·»åŠ åˆ°è¯¥setä¸­
     hashSet.add("cc");
 
     Iterator iterator = hashSet.iterator();

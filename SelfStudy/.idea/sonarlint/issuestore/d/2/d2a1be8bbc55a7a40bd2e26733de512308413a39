@@ -1,0 +1,7 @@
+
+Fsquid:S11484"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8ο„ξτσ,
+psquid:S00117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ί Ψό8„Χ»τσ,
+Fsquid:S1148"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8ΰ΅±τσ,
+Fsquid:S1148;"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8µΧοτσ,
+Fsquid:S1148-"#Use a logger to log this exception.(€ΙΤ…ύÿÿÿÿ8ξ•μτσ,
+vsquid:S1450"YRemove the "connection" field and declare it as a local variable in the relevant methods.(ÒΑΟ.8όΤ¶τσ,

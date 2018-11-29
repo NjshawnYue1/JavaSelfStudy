@@ -10,27 +10,27 @@ import java.util.List;
 public class ListDemo {
 
   public static void main(String[] args) {
-    List list = new ArrayList();
+    List<String> list = new ArrayList<>();
     function(list);
   }
 
-  private static void function(List list) {
-    //Ìí¼ÓÔªËØ
+  private static void function(List<String> list) {
+    //æ·»åŠ å…ƒç´ 
     list.add("abc1");
     list.add("abc2");
     list.add("abc3");
     System.out.println(list);//[abc1, abc2, abc3]
 
-    //²åÈëÔªËØ
+    //æ’å…¥å…ƒç´ 
 //    list.add(1,"abc9");[abc1, abc9, abc2, abc3]
-    //É¾³ıÔªËØ
-//    System.out.println("remove:"+list.remove(2));//remove:abc3 ·µ»ØµÄÊÇ±»É¾³ıµÄÔªËØ Ò²¸Ä±äÁË³¤¶È
-    //ĞŞ¸ÄÔªËØ
-//    System.out.println("set:"+list.set(1,"abc8"));//·µ»Ø±»ĞŞ¸ÄµÄÄÇ¸öÔªËØ
-    //»ñÈ¡ÔªËØ
-//    System.out.println("get:"+list.get(0)); ÌØÓĞµÄ»ñÈ¡·½·¨£¬¿ÉÒÔ²»½èÖúµü´úÆ÷
-    //»ñÈ¡×ÓÁĞ±í
-//    System.out.println("sublist:"+list.subList(0,2));//°üº¬Í·²»°üº¬½áÎ²
+    //åˆ é™¤å…ƒç´ 
+//    System.out.println("remove:"+list.remove(2));//remove:abc3 è¿”å›çš„æ˜¯è¢«åˆ é™¤çš„å…ƒç´  ä¹Ÿæ”¹å˜äº†é•¿åº¦
+    //ä¿®æ”¹å…ƒç´ 
+//    System.out.println("set:"+list.set(1,"abc8"));//è¿”å›è¢«ä¿®æ”¹çš„é‚£ä¸ªå…ƒç´ 
+    //è·å–å…ƒç´ 
+//    System.out.println("get:"+list.get(0)); ç‰¹æœ‰çš„è·å–æ–¹æ³•ï¼Œå¯ä»¥ä¸å€ŸåŠ©è¿­ä»£å™¨
+    //è·å–å­åˆ—è¡¨
+//    System.out.println("sublist:"+list.subList(0,2));//åŒ…å«å¤´ä¸åŒ…å«ç»“å°¾
     System.out.println(list);
 
   }
