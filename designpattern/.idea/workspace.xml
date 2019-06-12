@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="474597a0-371a-42fa-9297-436b3c165671" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="969284140">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="38" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="UML" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1465" />
+          <entry key="PLAIN_TEXT" value="531" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/decoratorpattern/AbstractBeverage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/decoratorpattern.AbstractBeverage">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>decoratorpattern.AbstractBeverage</OriginalElement>
+              <nodes>
+                <node x="1043.0" y="150.0">decoratorpattern.DarkRoast</node>
+                <node x="824.0" y="0.0">decoratorpattern.AbstractBeverage</node>
+                <node x="242.99999999999994" y="276.0">decoratorpattern.Milk</node>
+                <node x="824.0" y="150.0">decoratorpattern.HouseBland</node>
+                <node x="485.99999999999994" y="276.0">decoratorpattern.Whip</node>
+                <node x="1262.0" y="150.0">decoratorpattern.Decaf</node>
+                <node x="729.0" y="276.0">decoratorpattern.Soy</node>
+                <node x="0.0" y="445.0">decoratorpattern.TestCoffee</node>
+                <node x="0.0" y="276.0">decoratorpattern.Mocha</node>
+                <node x="366.99999999999994" y="161.5">decoratorpattern.AbstractCondimentDecorator</node>
+                <node x="605.0" y="150.0">decoratorpattern.Espresso</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="decoratorpattern.Soy" target="decoratorpattern.AbstractCondimentDecorator">
+                  <point x="0.0" y="-62.0" />
+                  <point x="840.5" y="246.0" />
+                  <point x="557.75" y="246.0" />
+                  <point x="81.75000000000006" y="26.5" />
+                </edge>
+                <edge source="decoratorpattern.Whip" target="decoratorpattern.AbstractCondimentDecorator">
+                  <point x="0.0" y="-62.0" />
+                  <point x="597.5" y="256.0" />
+                  <point x="503.24999999999994" y="256.0" />
+                  <point x="27.25" y="26.5" />
+                </edge>
+                <edge source="decoratorpattern.Mocha" target="decoratorpattern.AbstractCondimentDecorator">
+                  <point x="0.0" y="-62.0" />
+                  <point x="111.5" y="246.0" />
+                  <point x="394.24999999999994" y="246.0" />
+                  <point x="-81.75" y="26.5" />
+                </edge>
+                <edge source="decoratorpattern.Decaf" target="decoratorpattern.AbstractBeverage">
+                  <point x="0.0" y="-38.0" />
+                  <point x="1361.5" y="120.0" />
+                  <point x="1003.0999999999999" y="120.0" />
+                  <point x="79.60000000000002" y="50.0" />
+                </edge>
+                <edge source="decoratorpattern.Espresso" target="decoratorpattern.AbstractBeverage">
+                  <point x="0.0" y="-38.0" />
+                  <point x="704.5" y="130.0" />
+                  <point x="883.7" y="130.0" />
+                  <point x="-39.799999999999955" y="50.0" />
+                </edge>
+                <edge source="decoratorpattern.DarkRoast" target="decoratorpattern.AbstractBeverage">
+                  <point x="0.0" y="-38.0" />
+                  <point x="1142.5" y="130.0" />
+                  <point x="963.3" y="130.0" />
+                  <point x="39.799999999999955" y="50.0" />
+                </edge>
+                <edge source="decoratorpattern.Milk" target="decoratorpattern.AbstractCondimentDecorator">
+                  <point x="0.0" y="-62.0" />
+                  <point x="354.49999999999994" y="256.0" />
+                  <point x="448.74999999999994" y="256.0" />
+                  <point x="-27.25" y="26.5" />
+                </edge>
+                <edge source="decoratorpattern.HouseBland" target="decoratorpattern.AbstractBeverage">
+                  <point x="0.0" y="-38.0" />
+                  <point x="0.0" y="50.0" />
+                </edge>
+                <edge source="decoratorpattern.AbstractCondimentDecorator" target="decoratorpattern.AbstractBeverage">
+                  <point x="5.6843418860808015E-14" y="-26.5" />
+                  <point x="476.0" y="120.0" />
+                  <point x="843.8999999999999" y="120.0" />
+                  <point x="-79.60000000000002" y="50.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.9583011583011581" x="-69.5568090249798" y="349.44319097502023" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/strategypattern/OperationAdd.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/OperationSubstract.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/OperationMultiply.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/Strategy.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/StrategyPatternDemo.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/Context.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/策略模式" />
+        <option value="$PROJECT_DIR$/src/strategypattern/duck/鸭子策略.txt" />
+        <option value="$PROJECT_DIR$/src/strategypattern/duck/FlyBehavior.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/duck/QuackBehavior.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/duck/Quack.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/duck/SlientQuack.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/duck/SilentQuack.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/duck/OtherQuack.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/duck/FlyWithWings.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/duck/FlyWithNoWings.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/duck/Duck.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/duck/RealDuck.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/duck/AbstractDuck.java" />
+        <option value="$PROJECT_DIR$/src/strategypattern/duck/TestDuck.java" />
+        <option value="$PROJECT_DIR$/src/singleton/MySingleton.java" />
+        <option value="$PROJECT_DIR$/src/singleton/MySingleton2.java" />
+        <option value="$PROJECT_DIR$/src/singletonpattern/MySingleton2.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/Bverage.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/Expresso.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/CondimentDecorator.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/Moca.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/AbstractBverage.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/DarkRoast.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/AbstractCondimentDecorator.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/Decaf.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/Espresso.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/HouseBland.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/TestCoffee.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/Soy.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/Whip.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/Milk.java" />
+        <option value="$PROJECT_DIR$/src/decoratorpattern/Mocha.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\.m2\repository" />
+        <option name="mavenHome" value="D:/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="448" />
+    <option name="y" value="37" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="designpattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designpattern" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="designpattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="designpattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560349479128" />
+    <property name="last_opened_file_path" value="E:/spring_study/experiment8_mybatis1222" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.TestCoffee">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCoffee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="decoratorpattern.TestCoffee" />
+      <module name="designpattern" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="decoratorpattern.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDuck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="strategypattern.duck.TestDuck" />
+      <module name="designpattern" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="strategypattern.duck.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.TestDuck" />
+      <item itemvalue="Application.TestCoffee" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestCoffee" />
+        <item itemvalue="Application.TestDuck" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="474597a0-371a-42fa-9297-436b3c165671" name="Default Changelist" comment="" />
+      <created>1560089018206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560089018206</updated>
+      <workItem from="1560089023752" duration="2687000" />
+      <workItem from="1560259549377" duration="2493000" />
+      <workItem from="1560346868765" duration="3166000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8346000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Designer" order="0" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Web" order="5" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.23298033" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.5302198" />
+      <window_info anchor="bottom" id="Java Enterprise" order="4" />
+      <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.32935154" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.3993174" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Maven Projects" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/Strategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/OperationAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="e#192#193#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/OperationSubstract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/OperationMultiply.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/StrategyPatternDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/策略模式">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/duck/鸭子策略.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/duck/QuackBehavior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/duck/SilentQuack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="e#178#179#0" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/duck/OtherQuack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <folding>
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/duck/Quack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+          <folding>
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/duck/FlyWithNoWings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/duck/FlyWithWings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <folding>
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/duck/FlyBehavior.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/duck/AbstractDuck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/duck/RealDuck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strategypattern/duck/TestDuck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/singletonpattern/MySingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/singletonpattern/MySingleton2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding>
+            <element signature="e#278#279#0" expanded="true" />
+            <element signature="e#313#314#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decoratorpattern/AbstractCondimentDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+          <folding>
+            <element signature="e#207#208#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decoratorpattern/Decaf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+          <folding>
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#171#172#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decoratorpattern/Espresso.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <folding>
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+            <element signature="e#198#199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decoratorpattern/HouseBland.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding>
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decoratorpattern/DarkRoast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+          <folding>
+            <element signature="e#183#184#0" expanded="true" />
+            <element signature="e#221#222#0" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decoratorpattern/Soy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="e#217#218#0" expanded="true" />
+            <element signature="e#262#263#0" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decoratorpattern/TestCoffee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decoratorpattern/Whip.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decoratorpattern/Milk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="43" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#181#182#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decoratorpattern/Mocha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/decoratorpattern.AbstractBeverage">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>decoratorpattern.AbstractBeverage</OriginalElement>
+          <nodes>
+            <node x="1043.0" y="150.0">decoratorpattern.DarkRoast</node>
+            <node x="824.0" y="0.0">decoratorpattern.AbstractBeverage</node>
+            <node x="242.99999999999994" y="276.0">decoratorpattern.Milk</node>
+            <node x="824.0" y="150.0">decoratorpattern.HouseBland</node>
+            <node x="485.99999999999994" y="276.0">decoratorpattern.Whip</node>
+            <node x="1262.0" y="150.0">decoratorpattern.Decaf</node>
+            <node x="729.0" y="276.0">decoratorpattern.Soy</node>
+            <node x="0.0" y="445.0">decoratorpattern.TestCoffee</node>
+            <node x="0.0" y="276.0">decoratorpattern.Mocha</node>
+            <node x="366.99999999999994" y="161.5">decoratorpattern.AbstractCondimentDecorator</node>
+            <node x="605.0" y="150.0">decoratorpattern.Espresso</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="decoratorpattern.Soy" target="decoratorpattern.AbstractCondimentDecorator">
+              <point x="0.0" y="-62.0" />
+              <point x="840.5" y="246.0" />
+              <point x="557.75" y="246.0" />
+              <point x="81.75000000000006" y="26.5" />
+            </edge>
+            <edge source="decoratorpattern.Whip" target="decoratorpattern.AbstractCondimentDecorator">
+              <point x="0.0" y="-62.0" />
+              <point x="597.5" y="256.0" />
+              <point x="503.24999999999994" y="256.0" />
+              <point x="27.25" y="26.5" />
+            </edge>
+            <edge source="decoratorpattern.Mocha" target="decoratorpattern.AbstractCondimentDecorator">
+              <point x="0.0" y="-62.0" />
+              <point x="111.5" y="246.0" />
+              <point x="394.24999999999994" y="246.0" />
+              <point x="-81.75" y="26.5" />
+            </edge>
+            <edge source="decoratorpattern.Decaf" target="decoratorpattern.AbstractBeverage">
+              <point x="0.0" y="-38.0" />
+              <point x="1361.5" y="120.0" />
+              <point x="1003.0999999999999" y="120.0" />
+              <point x="79.60000000000002" y="50.0" />
+            </edge>
+            <edge source="decoratorpattern.Espresso" target="decoratorpattern.AbstractBeverage">
+              <point x="0.0" y="-38.0" />
+              <point x="704.5" y="130.0" />
+              <point x="883.7" y="130.0" />
+              <point x="-39.799999999999955" y="50.0" />
+            </edge>
+            <edge source="decoratorpattern.DarkRoast" target="decoratorpattern.AbstractBeverage">
+              <point x="0.0" y="-38.0" />
+              <point x="1142.5" y="130.0" />
+              <point x="963.3" y="130.0" />
+              <point x="39.799999999999955" y="50.0" />
+            </edge>
+            <edge source="decoratorpattern.Milk" target="decoratorpattern.AbstractCondimentDecorator">
+              <point x="0.0" y="-62.0" />
+              <point x="354.49999999999994" y="256.0" />
+              <point x="448.74999999999994" y="256.0" />
+              <point x="-27.25" y="26.5" />
+            </edge>
+            <edge source="decoratorpattern.HouseBland" target="decoratorpattern.AbstractBeverage">
+              <point x="0.0" y="-38.0" />
+              <point x="0.0" y="50.0" />
+            </edge>
+            <edge source="decoratorpattern.AbstractCondimentDecorator" target="decoratorpattern.AbstractBeverage">
+              <point x="5.6843418860808015E-14" y="-26.5" />
+              <point x="476.0" y="120.0" />
+              <point x="843.8999999999999" y="120.0" />
+              <point x="-79.60000000000002" y="50.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.9583011583011581" x="-69.5568090249798" y="349.44319097502023" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decoratorpattern/AbstractBeverage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
